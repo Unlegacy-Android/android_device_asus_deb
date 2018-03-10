@@ -1,7 +1,11 @@
-#
-#set prefer network type
-#LTE, GSM, WCDMA(9)
-#
+# Set prefer network type LTE, GSM, WCDMA(9)
 ro.telephony.default_network=9
-#Display Traditional Chinese/Simplified Chinese carriers name
+
+# Display Traditional Chinese/Simplified Chinese carriers name
 persist.radio.use_cc_names=true
+
+# Do not power down SIM card when modem is sent to Low Power Mode.
+persist.radio.apm_sim_not_pwdn=1
+
+# RIL
+rild.libpath=/system/lib/libril-qc-qmi-1.so

@@ -20,7 +20,11 @@ TARGET_BOARD_INFO_FILE := device/asus/deb/board-info.txt
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.deb
 
-TARGET_RECOVERY_FSTAB = device/asus/deb/fstab.deb
+TARGET_RECOVERY_FSTAB = device/asus/deb/rootdir/fstab.deb
+
+TARGET_SYSTEM_PROP := \
+    device/asus/deb/system.prop \
+    device/asus/flo/system.prop
 
 -include vendor/asus/deb/BoardConfigVendor.mk
 include device/asus/flo/BoardConfigCommon.mk

@@ -21,22 +21,15 @@ PRODUCT_PACKAGES := \
     BasicSmsReceiver
 
 PRODUCT_COPY_FILES := \
-    device/asus/deb/fstab.deb:root/fstab.flo \
-    device/asus/deb/init.deb.rc:root/init.flo.rc
+    device/asus/deb/rootdir/fstab.deb:root/fstab.flo \
+    device/asus/deb/rootdir/init.deb.rc:root/init.flo.rc
 
 PRODUCT_PACKAGES += \
-	camera.deb
+    camera.deb
 
 #NFC
 PRODUCT_PACKAGES += \
     nfc_nci.bcm2079x.default
-
-# Do not power down SIM card when modem is sent to Low Power Mode.
-PRODUCT_PROPERTY_OVERRIDES += \
-        persist.radio.apm_sim_not_pwdn=1
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-        rild.libpath=/system/lib/libril-qc-qmi-1.so
 
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/asus/flo/device-common.mk)
