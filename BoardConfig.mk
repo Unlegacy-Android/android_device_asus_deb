@@ -26,5 +26,5 @@ TARGET_SYSTEM_PROP := \
     device/asus/deb/system.prop \
     device/asus/flo/system.prop
 
--include vendor/asus/deb/BoardConfigVendor.mk
+-include vendor/qcom/deb/BoardConfigPartial.mk
 include device/asus/flo/BoardConfigCommon.mk
