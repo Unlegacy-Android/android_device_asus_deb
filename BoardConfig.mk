@@ -20,6 +20,8 @@ TARGET_BOARD_INFO_FILE := device/asus/deb/board-info.txt
 
 TARGET_RECOVERY_FSTAB = device/asus/deb/rootdir/fstab.deb
 
+DEVICE_MANIFEST_FILE := device/asus/deb/manifest.xml
+
 TARGET_SYSTEM_PROP := \
     device/asus/deb/system.prop \
     device/asus/flo/system.prop

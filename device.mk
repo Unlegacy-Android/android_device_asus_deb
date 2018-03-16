@@ -27,10 +27,6 @@ PRODUCT_COPY_FILES := \
 PRODUCT_PACKAGES += \
     camera.deb
 
-#NFC
-PRODUCT_PACKAGES += \
-    nfc_nci.bcm2079x.default
-
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/asus/flo/device-common.mk)
 
