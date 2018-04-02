@@ -8,4 +8,4 @@ persist.radio.use_cc_names=true
 persist.radio.apm_sim_not_pwdn=1
 
 # RIL
-rild.libpath=/system/lib/libril-qc-qmi-1.so
+rild.libpath=/vendor/lib/libril-qc-qmi-1.so

@@ -20,8 +20,13 @@ PRODUCT_PACKAGES := \
     CarrierConfig \
     BasicSmsReceiver
 
-PRODUCT_COPY_FILES := \
+# Kickstart
+PRODUCT_COPY_FILES += \
+    device/asus/deb/kickstart_checker.sh:$(TARGET_COPY_OUT_VENDOR)/bin/kickstart_checker.sh
+
+PRODUCT_COPY_FILES += \
     device/asus/deb/rootdir/fstab.deb:root/fstab.flo \
+    device/asus/flo/rootdir/init.flo.rc:root/init.flo.common.rc \
     device/asus/deb/rootdir/init.deb.rc:root/init.flo.rc
 
 PRODUCT_PACKAGES += \
