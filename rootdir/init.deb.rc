@@ -37,7 +37,7 @@ on post-fs-data
     mkdir /tombstones/mdm 0771 system system
 
     # kickstart
-    mkdir /data/qcks 0770 system system
+    mkdir /data/vendor/qcks 0770 system system
     chown system /dev/block/platform/msm_sdcc.1/by-name
 
 # QMUX must be in multiple groups to support external process connections
