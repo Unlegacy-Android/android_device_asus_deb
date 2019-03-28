@@ -43,4 +43,4 @@ wakelock_use(kickstart)
 set_prop(kickstart, radio_prop)
 
 # Access /sys/module/rmnet_usb/parameters/rmnet_data_init
-allow kickstart sysfs_rmnet:file w_file_perms;
+allow kickstart sysfs_net:file w_file_perms;

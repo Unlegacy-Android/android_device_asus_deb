@@ -1,2 +1,2 @@
-type sysfs_rmnet, fs_type, sysfs_type;
+# data file
 type kickstart_vendor_data_file, file_type, data_file_type;

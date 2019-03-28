@@ -29,6 +29,3 @@
 
 /system/vendor/bin/qmuxd                    u:object_r:qmux_exec:s0
 /system/vendor/bin/netmgrd                  u:object_r:netmgrd_exec:s0
-
-# Sysfs entry for the RmNet function driver
-/sys/module/rmnet_usb/parameters/rmnet_data_init -- u:object_r:sysfs_rmnet:s0
